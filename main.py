@@ -1,3 +1,6 @@
+# Exchange rate constant
+USD_TO_INR_RATE = 83.1
+
 def usd_to_inr(usd):
     """
     Convert USD to INR (Indian Rupees).
@@ -24,7 +27,7 @@ def usd_to_inr(usd):
         raise ValueError("Error: USD amount cannot be negative. Please provide a positive number.")
     
     # Perform the conversion
-    return usd * 83.1
+    return usd * USD_TO_INR_RATE
 
 if __name__ == "__main__":
     try:
