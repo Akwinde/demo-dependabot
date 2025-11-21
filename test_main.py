@@ -91,22 +91,15 @@ class TestUsdToInr(unittest.TestCase):
         usd_to_inr.cache_clear()
         
         # First call - will compute
-        start = time.perf_counter()
         result1 = usd_to_inr(100)
-        first_call_time = time.perf_counter() - start
         
         # Second call with same input - should be cached
-        start = time.perf_counter()
         result2 = usd_to_inr(100)
-        second_call_time = time.perf_counter() - start
         
         # Results should be identical
         self.assertEqual(result1, result2)
         
-        # Cached call should be faster or at least not significantly slower
-        # We don't assert it's faster because the function is so simple
-        # that the difference might not be measurable, but we verify
-        # the cache is working by checking cache_info
+        # Verify the cache is working by checking cache_info
         cache_info = usd_to_inr.cache_info()
         self.assertEqual(cache_info.hits, 1)  # One cache hit
         self.assertEqual(cache_info.misses, 1)  # One cache miss

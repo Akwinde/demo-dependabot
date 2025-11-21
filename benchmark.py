@@ -2,7 +2,6 @@
 Performance benchmark to demonstrate the efficiency improvements.
 """
 import time
-import sys
 from main import usd_to_inr
 
 
