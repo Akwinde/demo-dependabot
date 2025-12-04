@@ -7,10 +7,10 @@
 #### AWS Access Key
 ```bash
 # Use AWS CLI to deactivate the key
-aws iam update-access-key --access-key-id AKIA1234567890TEST --status Inactive --user-name <USERNAME>
+aws iam update-access-key --access-key-id <EXPOSED_ACCESS_KEY_ID> --status Inactive --user-name <USERNAME>
 
 # Then delete it
-aws iam delete-access-key --access-key-id AKIA1234567890TEST --user-name <USERNAME>
+aws iam delete-access-key --access-key-id <EXPOSED_ACCESS_KEY_ID> --user-name <USERNAME>
 
 # Generate a new access key pair
 aws iam create-access-key --user-name <USERNAME>

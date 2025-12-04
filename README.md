@@ -1,8 +1,8 @@
 # demo-dependabot
 
-## ⚠️ Security Alert
+## ⚠️ CRITICAL SECURITY ALERT
 
-**CRITICAL:** This repository contains exposed secrets that require immediate attention.
+**IMMEDIATE ACTION REQUIRED:** This repository contains exposed secrets that pose a critical security risk.
 
 Please review:
 - [Security Analysis Report](SECURITY_ANALYSIS.md) - Detailed findings
@@ -12,4 +12,4 @@ Please review:
 1. AWS Access Key ID in `creds.txt`
 2. GitHub Personal Access Token in `test.txt`
 
-**Action Required:** Follow the remediation guide to revoke these credentials and remove them from the repository history.
+**These credentials must be revoked immediately.** Follow the [Remediation Guide](REMEDIATION_GUIDE.md) for step-by-step instructions.

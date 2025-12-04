@@ -20,7 +20,7 @@ This report documents the findings from a comprehensive security analysis of the
 - **File:** `creds.txt`
 - **Line:** 1
 - **Type:** AWS Access Key ID
-- **Pattern:** `AWS_ACCESS_KEY_ID=AKIA1234567890TEST`
+- **Pattern:** `AWS_ACCESS_KEY_ID=AKIA************TEST`
 - **Risk Level:** HIGH
 - **Description:** AWS Access Key IDs starting with "AKIA" are valid credential identifiers that could provide unauthorized access to AWS resources if the corresponding secret access key is also compromised.
 
@@ -28,7 +28,7 @@ This report documents the findings from a comprehensive security analysis of the
 - **File:** `test.txt`
 - **Line:** 1
 - **Type:** GitHub Personal Access Token (PAT)
-- **Pattern:** `TEST_SECRET=ghp_testSecretScanning1234567890abcdefABCDEF`
+- **Pattern:** `TEST_SECRET=ghp_************************************`
 - **Risk Level:** HIGH
 - **Description:** GitHub Personal Access Tokens (starting with "ghp_") provide programmatic access to GitHub resources. Exposed tokens can be used to access private repositories, modify code, and perform actions on behalf of the token owner.
 
@@ -56,8 +56,8 @@ This report documents the findings from a comprehensive security analysis of the
 ### Immediate Actions Required:
 
 1. **Revoke Compromised Credentials**
-   - Immediately rotate/revoke the AWS Access Key ID: `AKIA1234567890TEST`
-   - Revoke the GitHub Personal Access Token: `ghp_testSecretScanning1234567890abcdefABCDEF`
+   - Immediately rotate/revoke the AWS Access Key ID found in `creds.txt`
+   - Revoke the GitHub Personal Access Token found in `test.txt`
 
 2. **Remove Secrets from Repository**
    - Delete `creds.txt` and `test.txt` files from the repository
