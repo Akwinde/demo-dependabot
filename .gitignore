@@ -15,9 +15,10 @@ yarn-error.log*
 creds.txt
 credentials.txt
 secrets.txt
-*credential*
-*secret*
-*.credentials
+*.credentials.txt
+*.secrets.json
+auth.json
+config.secret.*
 
 # Python
 __pycache__/

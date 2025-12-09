@@ -15,14 +15,14 @@ A comprehensive scan of the repository has identified **2 high-severity secrets*
 ### 1. AWS Access Key ID
 - **Location**: `creds.txt` (Line 1)
 - **Secret Type**: AWS Access Key ID
-- **Pattern**: `AKIA1234567890TEST`
+- **Pattern**: `AKIA************TEST` (redacted)
 - **Severity**: 🔴 **HIGH**
 - **Risk**: Exposed AWS credentials can lead to unauthorized access to AWS resources, potential data breaches, and unexpected billing charges.
 
 ### 2. GitHub Personal Access Token
 - **Location**: `test.txt` (Line 1)
 - **Secret Type**: GitHub Personal Access Token
-- **Pattern**: `ghp_testSecretScanning1234567890abcdefABCDEF`
+- **Pattern**: `ghp_************************************DEF` (redacted)
 - **Severity**: 🔴 **HIGH**
 - **Risk**: Exposed GitHub tokens can allow unauthorized access to repositories, code modification, and access to private data.
 

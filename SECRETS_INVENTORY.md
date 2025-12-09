@@ -6,8 +6,8 @@ This document provides a detailed inventory of all secrets detected in the repos
 
 | File | Line | Secret Type | Pattern Preview | Severity |
 |------|------|-------------|-----------------|----------|
-| creds.txt | 1 | AWS Access Key ID | AKIA1234567890TEST | HIGH |
-| test.txt | 1 | GitHub Personal Access Token | ghp_testSecretScanning1234567890abcdefABCDEF | HIGH |
+| creds.txt | 1 | AWS Access Key ID | AKIA************TEST | HIGH |
+| test.txt | 1 | GitHub Personal Access Token | ghp_************************************DEF | HIGH |
 
 ## Total Count
 - **Total Secrets Found**: 2
